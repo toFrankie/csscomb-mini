@@ -1,8 +1,12 @@
 # 项目说明
 
-整个项目的初衷，以及实现思路在[简书](https://www.jianshu.com/u/f4dac74bd955)更新：
+整个项目的初衷，是为了让小程序支持使用 [CSScomb](https://github.com/csscomb/csscomb.js) 来格式化  WXSS、ACSS 这些文件。其实借助 Prettier 的 override 功能就能很好的对我们的小程序样式文件进行格式化。
 
-- [实现一个 CSScomb 的 Gulp 插件并应用于微信小程序](https://www.jianshu.com/p/7c3ce9be7341)。
+但是 Prettier 没有 CSS 属性的排序功能，所以写一个 Demo 来实现 WXSS 的格式化和排序。
+
+> PS: 可能是为了满足自己的强迫症，哈哈。
+
+实现思路在[简书](https://www.jianshu.com/u/f4dac74bd955)上更新：[实现一个 CSScomb 的 Gulp 插件并应用于微信小程序](https://www.jianshu.com/p/7c3ce9be7341)。
 
 ### Usage
 
