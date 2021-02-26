@@ -11,7 +11,7 @@
   },
   "scripts": {
     "csscomb": "gulp wxssTask",
-    "csscomb:mini": "gulp csscombTask --path ./**/*.wxss,app.acss"
+    "csscomb:mini": "gulp csscombTask --path ./**/*.wxss"
   },
   "devDependencies": {
     "csscomb": "^4.3.0",
