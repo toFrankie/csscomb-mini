@@ -20,6 +20,22 @@ const wxssformat = cb => {
     .pipe(dest(file => file.base))
 }
 
+const csscombPlugin = () => {
+
+}
+
+const csscomb = cb => {
+  try {
+    return src('app.wxss')
+      .pipe(debug())
+      .pipe(csscombPlugin())
+      .pipe(dest(file => file.base))
+  } catch (e) {
+    console.warn(e)
+  }
+}
+
 module.exports = {
-  wxssformat
+  wxssformat,
+  csscomb
 }
