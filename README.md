@@ -42,3 +42,8 @@ $ yarn run csscomb:mini
   }
 }
 ```
+
+例如：
+
+- 匹配所有 wxss 文件：`"gulp csscombTask --path ./**/*.wxss"`
+- 匹配个别文件：`"gulp csscombTask --path app.wxss,pages/index/index.wxss"`
