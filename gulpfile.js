@@ -11,7 +11,7 @@ const minimist = require('minimist')
 
 const wxssTask = cb => {
   return src('app.wxss')
-    .pipe(debug())
+    // .pipe(debug())
     .pipe(
       rename({
         extname: '.css'
@@ -104,7 +104,7 @@ const csscombTask = cb => {
     // allowEmpty 选项是为了避免在没有找到匹配的文件时抛出错误
     // Error: File not found with singular glob: xxx (if this was purposeful, use `allowEmpty` option)
     return src(newPaths, { allowEmpty: true })
-      .pipe(debug())
+      // .pipe(debug())
       .pipe(csscombPlugin())
       .pipe(dest(file => file.base))
   } catch (e) {
