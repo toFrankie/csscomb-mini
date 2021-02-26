@@ -10,8 +10,8 @@
     "url": "https://github.com/toFrankie/csscomb-mini.git"
   },
   "scripts": {
-    "csscomb": "gulp wxssformat",
-    "csscomb:mini": "gulp csscomb --path ./test/**/*.* --ext .wxss"
+    "csscomb": "gulp wxssTask",
+    "csscomb:mini": "gulp csscombTask --path ./test/**/*.* --ext .wxss"
   },
   "devDependencies": {
     "csscomb": "^4.3.0",

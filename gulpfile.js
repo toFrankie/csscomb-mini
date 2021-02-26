@@ -3,7 +3,7 @@ const rename = require('gulp-rename')
 const debug = require('gulp-debug')
 const csscomb = require('gulp-csscomb')
 
-const wxssformat = cb => {
+const wxssTask = cb => {
   return src('app.wxss')
     .pipe(debug())
     .pipe(
@@ -24,7 +24,7 @@ const csscombPlugin = () => {
 
 }
 
-const csscomb = cb => {
+const csscombTask = cb => {
   try {
     return src('app.wxss')
       .pipe(debug())
@@ -36,6 +36,6 @@ const csscomb = cb => {
 }
 
 module.exports = {
-  wxssformat,
-  csscomb
+  wxssTask,
+  csscombTask
 }
