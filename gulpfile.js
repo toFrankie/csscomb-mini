@@ -112,7 +112,13 @@ const csscombTask = cb => {
   }
 }
 
+const temp = cb => {
+  console.log('here --------->')
+  cb()
+}
+
 module.exports = {
   wxssTask,
-  csscombTask
+  csscombTask,
+  temp
 }
