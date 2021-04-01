@@ -51,3 +51,7 @@ $ yarn run csscomb:mini
 
 - 匹配所有 wxss 文件：`"gulp csscombTask --path ./**/*.wxss"`
 - 匹配个别文件：`"gulp csscombTask --path app.wxss,pages/index/index.wxss"`
+
+### 其他
+
+* [gulp-git-staged](https://www.npmjs.com/package/gulp-git-staged)
