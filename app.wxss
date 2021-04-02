@@ -1,3 +1,6 @@
+.a {
+  color: #eee;
+}
 .container {
   display: flex;
 
@@ -5,7 +8,7 @@
   padding: 200rpx 0;
   height: 100%;
 
-  color: #aaa;;
+  color: #aaa;
 
   align-items: center;
   justify-content: space-between;
