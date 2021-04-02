@@ -87,6 +87,9 @@ const csscombTask = cb => {
     // 获取参数，如 { _: [ 'csscomb:mini' ], path: 'xxx', ext: 'xxx' }
     const options = minimist(process.argv.slice(2))
 
+    // TODO: 打印参数
+    console.log(options)
+
     // 过滤掉非项目下的路径
     const paths = options.path.split(',').filter(item => {
       const re1 = /^\//
@@ -112,13 +115,7 @@ const csscombTask = cb => {
   }
 }
 
-const temp = cb => {
-  console.log('here --------->')
-  cb()
-}
-
 module.exports = {
   wxssTask,
-  csscombTask,
-  temp
+  csscombTask
 }
