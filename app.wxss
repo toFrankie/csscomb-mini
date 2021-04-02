@@ -5,7 +5,9 @@
   padding: 200rpx 0;
   height: 100%;
 
+  color: #aaa;;
+
   align-items: center;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
 }
