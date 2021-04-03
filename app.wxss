@@ -1,6 +1,3 @@
-.a {
-  color: #eee;
-}
 .container {
   display: flex;
 
@@ -13,4 +10,8 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+}
+.a {
+  color: #eee;
+  background: green;
 }
