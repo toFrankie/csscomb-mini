@@ -90,6 +90,11 @@ const csscombTask = cb => {
     // TODO: 打印参数
     console.log(options)
 
+    if (!options.path) {
+      // 暂时不处理，后续可能会考虑格式化所有文件
+      return cb()
+    }
+
     // 过滤掉非项目下的路径
     const paths = options.path.split(',').filter(item => {
       const re1 = /^\//
