@@ -63,3 +63,4 @@ $ yarn run csscomb:mini
 
 1. 当 gulp csscombTask 中不传参（path）时，是不处理，还是处理所有文件？
 2. 将 CSScomb 集成到 ESLint、Prettier 中
+3. 关于 CSScomb 在 VS Code 的配置可参考：[GentleHwang/csscomb-config-custom](https://github.com/GentleHwang/csscomb-config-custom)
