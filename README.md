@@ -6,7 +6,10 @@
 
 > PS: 可能是为了满足自己的强迫症，哈哈。
 
-实现思路在[简书](https://www.jianshu.com/u/f4dac74bd955)上更新：[实现一个 CSScomb 的 Gulp 插件并应用于微信小程序](https://www.jianshu.com/p/7c3ce9be7341)。
+思路可看以下两篇文章：
+
+1. [将 CSScomb 集成到微信小程序项目中](https://www.jianshu.com/p/7c3ce9be7341)
+2. [将 CSScomb 集成到 Git Hook 中](https://www.jianshu.com/p/734aeca6709c)
 
 ### Usage
 
@@ -55,3 +58,8 @@ $ yarn run csscomb:mini
 ### 其他
 
 * [gulp-git-staged](https://www.npmjs.com/package/gulp-git-staged)
+
+### 待完善
+
+1. 当 gulp csscombTask 中不传参（path）时，是不处理，还是处理所有文件？
+2. 将 CSScomb 集成到 ESLint、Prettier 中
