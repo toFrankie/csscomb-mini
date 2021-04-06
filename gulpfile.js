@@ -54,7 +54,7 @@ const csscombPlugin = () => {
       }
 
       if (combConfigPath && !fs.existsSync(combConfigPath)) {
-        this.emit('error', new PluginError('csscombPlugin', 'Configuration file not found: ' + configPath))
+        this.emit('error', new PluginError('csscombPlugin', 'Configuration file not found: ' + combConfigPath))
         return cb()
       }
 
