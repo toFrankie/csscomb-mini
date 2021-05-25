@@ -11,8 +11,8 @@ const minimist = require('minimist')
 
 const wxssTask = cb => {
   return (
-    src('app.wxss')
-      // .pipe(debug())
+    src('miniprogram/app.wxss')
+      .pipe(debug())
       .pipe(
         rename({
           extname: '.css'
@@ -86,7 +86,7 @@ const csscombTask = cb => {
     const options = minimist(process.argv.slice(2))
 
     // TODO: 打印参数
-    console.log(options)
+    // console.log(options)
 
     if (!options.path) {
       // 暂时不处理，后续可能会考虑格式化所有文件
@@ -101,7 +101,7 @@ const csscombTask = cb => {
     })
 
     // 去重
-    const newPaths = Array.from(new Set(paths))
+    const newPaths = [...new Set(paths)]
 
     if (!newPaths.length) {
       return cb()
@@ -111,7 +111,7 @@ const csscombTask = cb => {
     // Error: File not found with singular glob: xxx (if this was purposeful, use `allowEmpty` option)
     return (
       src(newPaths, { allowEmpty: true })
-        // .pipe(debug())
+        .pipe(debug())
         .pipe(csscombPlugin())
         .pipe(dest(file => file.base))
     )

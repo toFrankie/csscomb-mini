@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "csscomb": "gulp wxssTask",
-    "csscomb:mini": "gulp csscombTask --path ./**/*.wxss",
+    "csscomb:mini": "gulp csscombTask --path 'miniprogram/**/*.wxss'",
     "eslint:fix": "eslint --fix . --ext .js",
     "prettier:fix": "prettier --write './**/*.{json,js,wxml.axml,swan,css,wxss,acss}'"
   },
