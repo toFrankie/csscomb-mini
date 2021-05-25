@@ -10,8 +10,11 @@
     "url": "https://github.com/toFrankie/csscomb-mini.git"
   },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "csscomb": "gulp wxssTask",
-    "csscomb:mini": "gulp csscombTask --path ./**/*.wxss"
+    "csscomb:mini": "gulp csscombTask --path ./**/*.wxss",
+    "eslint:fix": "eslint --fix . --ext .js",
+    "prettier:fix": "prettier --write './**/*.{json,js,wxml.axml,swan,css,wxss,acss}'"
   },
   "husky": {
     "hooks": {
@@ -19,7 +22,10 @@
     }
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "csscomb": "^4.3.0",
+    "eslint": "^7.27.0",
+    "eslint-config-alloy": "^4.1.0",
     "gulp": "^4.0.2",
     "gulp-csscomb": "^3.1.0",
     "gulp-debug": "^4.0.0",
@@ -28,6 +34,7 @@
     "lint-staged": "^10.5.4",
     "minimist": "^1.2.5",
     "plugin-error": "^1.0.1",
+    "prettier": "^2.3.0",
     "through2": "^4.0.2"
   }
 }
