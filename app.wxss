@@ -15,3 +15,9 @@
   color: #eee;
   background: green;
 }
+.test {
+  font-size: 34rpx;
+
+  color: #1a1a1a;
+  background: red;
+}

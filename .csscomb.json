@@ -36,7 +36,14 @@
       "list-style-type",
       "list-style-image"
     ],
-    ["-webkit-box-orient", "-webkit-box-direction", "-webkit-box-decoration-break", "-webkit-box-pack", "-webkit-box-align", "-webkit-box-flex"],
+    [
+      "-webkit-box-orient",
+      "-webkit-box-direction",
+      "-webkit-box-decoration-break",
+      "-webkit-box-pack",
+      "-webkit-box-align",
+      "-webkit-box-flex"
+    ],
     ["position", "top", "right", "bottom", "left", "z-index"],
     [
       "margin",
