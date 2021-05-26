@@ -37,7 +37,7 @@ $ yarn run csscomb:mini
 
 ### 如何配置 csscombTask 脚本
 
-- `--path` 表示符合 glob 文件匹配模式的路径，多个路径是用 `,` 隔开。还有我限制了仅支持项目下的文件。
+- `--path` 表示符合 glob 文件匹配模式的路径，多个路径是用 `,` 隔开，并用单引号 `'` 括起来。还有我限制了仅支持项目下的文件。
 - `--ext` 表示扩展名，如 `.css`、`.wxss` 等。（此选项目前没什么用，保留下来后续优化用）
 
 > 若对 Glob 模式不了解，可看 [Glob 详解](https://www.gulpjs.com.cn/docs/getting-started/explaining-globs/#glob-详解)。
@@ -45,7 +45,7 @@ $ yarn run csscomb:mini
 ```json
 {
   "scripts": {
-    "csscomb:mini": "gulp csscombTask --path <filepath> --ext '<extension>'"
+    "csscomb:mini": "gulp csscombTask --path '<filepath>' --ext <extension>"
   }
 }
 ```
@@ -62,5 +62,4 @@ $ yarn run csscomb:mini
 ### 待完善
 
 1. 当 gulp csscombTask 中不传参（path）时，是不处理，还是处理所有文件？
-2. 将 CSScomb 集成到 ESLint、Prettier 中
-3. 关于 CSScomb 在 VS Code 的配置可参考：[GentleHwang/csscomb-config-custom](https://github.com/GentleHwang/csscomb-config-custom)
+2. 关于 CSScomb 在 VS Code 的配置可参考：[GentleHwang/csscomb-config-custom](https://github.com/GentleHwang/csscomb-config-custom)
