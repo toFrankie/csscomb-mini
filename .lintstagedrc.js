@@ -1,3 +1,5 @@
 module.exports = {
-  '*.wxss': filenames => filenames.map(filename => `gulp csscombTask --path ${filename}`)
+  '*.{js}': 'eslint --fix',
+  '*.{css,wxss,acss}': filenames => [`prettier --write ${filenames.join(' ')}`, `gulp csscombTask  --path '${filenames.join(',')}'`],
+  '*.{json,wxml,axml}': 'prettier --write'
 }
