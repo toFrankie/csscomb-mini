@@ -27,7 +27,7 @@ const wxssTask = cb => {
     .pipe(dest(file => file.base))
 }
 
-// csscomb 插件
+// CSScomb gulp plugin
 const csscombPlugin = () => {
   // 默认支持扩类型
   const defaultExts = ['.css', '.sass', '.scss', '.less']
@@ -78,8 +78,8 @@ const csscombPlugin = () => {
   })
 }
 
-// Gulp 任务
-const csscombTask = cb => {
+// CSScomb gulp task
+const csscombMini = cb => {
   try {
     // 获取参数，如 { _: [ 'csscomb:mini' ], path: 'xxx', ext: 'xxx' }
     const options = minimist(process.argv.slice(2))
@@ -119,5 +119,5 @@ const csscombTask = cb => {
 
 module.exports = {
   wxssTask,
-  csscombTask
+  csscombMini
 }

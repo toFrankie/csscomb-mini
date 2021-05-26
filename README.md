@@ -35,7 +35,7 @@ $ yarn run csscomb:mini
 
 详情看 `gulpfile.js` 的方法 `csscombPlugin`。
 
-### 如何配置 csscombTask 脚本
+### 如何配置 csscombMini 脚本
 
 - `--path` 表示符合 glob 文件匹配模式的路径，多个路径是用 `,` 隔开，并用单引号 `'` 括起来。还有我限制了仅支持项目下的文件。
 - `--ext` 表示扩展名，如 `.css`、`.wxss` 等。（此选项目前没什么用，保留下来后续优化用）
@@ -45,15 +45,15 @@ $ yarn run csscomb:mini
 ```json
 {
   "scripts": {
-    "csscomb:mini": "gulp csscombTask --path '<filepath>' --ext <extension>"
+    "csscomb:mini": "gulp csscombMini --path '<filepath>' --ext <extension>"
   }
 }
 ```
 
 例如：
 
-- 匹配所有 wxss 文件：`"gulp csscombTask --path './**/*.wxss'"`
-- 匹配个别文件：`"gulp csscombTask --path 'miniprogram/app.wxss,miniprogram/pages/index/index.wxss'"`
+- 匹配所有 wxss 文件：`"gulp csscombMini --path './**/*.wxss'"`
+- 匹配个别文件：`"gulp csscombMini --path 'miniprogram/app.wxss,miniprogram/pages/index/index.wxss'"`
 
 ### 其他
 
@@ -61,5 +61,5 @@ $ yarn run csscomb:mini
 
 ### 待完善
 
-1. 当 gulp csscombTask 中不传参（path）时，是不处理，还是处理所有文件？
+1. 当 gulp csscombMini 中不传参（path）时，是不处理，还是处理所有文件？
 2. 关于 CSScomb 在 VS Code 的配置可参考：[GentleHwang/csscomb-config-custom](https://github.com/GentleHwang/csscomb-config-custom)
