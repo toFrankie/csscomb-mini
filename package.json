@@ -15,7 +15,7 @@
     "csscomb:mini": "gulp csscombTask --path 'miniprogram/**/*.wxss'",
     "eslint:fix": "eslint --fix . --ext .js",
     "prettier:fix": "prettier --write './**/*.{json,js,wxml.axml,swan,css,wxss,acss}'",
-    "format:fix": "run-p eslint:fix prettier:fix csscomb:mini"
+    "format:fix": "run-p prettier:fix eslint:fix csscomb:mini"
   },
   "husky": {
     "hooks": {
