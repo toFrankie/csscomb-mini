@@ -1,24 +1,17 @@
-# http://editorconfig.org
+.idea
+.DS_Store
 
-root = true
+node_modules
+dist
+package-lock.json
+yarn.lock
 
-[*]
-indent_style = space
-indent_size = 2
-end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
-spaces_around_operators = true
+project.config.json
+project.swan.json
+mini.project.json
+quickapp.config.json
+.tea
+.kaitian
+.quickapp
 
-[*.js]
-quote_type = single
-
-[*.md]
-trim_trailing_whitespace = false
-
-[{project.config.json,mini.project.json,project.swan.json}]
-insert_final_newline = false
-
-[*.json]
-indent_size = 2
+*.min.js
