@@ -2,6 +2,10 @@ module.exports = {
   root: true,
   parser: 'babel-eslint',
   extends: ['eslint-config-alloy'],
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module'
+  },
   env: {
     browser: true,
     node: true,
