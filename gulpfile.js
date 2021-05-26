@@ -1,3 +1,4 @@
+/* eslint-disable no-invalid-this */
 const fs = require('fs')
 const path = require('path')
 const { src, dest } = require('gulp')
@@ -10,22 +11,20 @@ const PluginError = require('plugin-error')
 const minimist = require('minimist')
 
 const wxssTask = cb => {
-  return (
-    src('miniprogram/app.wxss')
-      .pipe(debug())
-      .pipe(
-        rename({
-          extname: '.css'
-        })
-      )
-      .pipe(csscomb())
-      .pipe(
-        rename({
-          extname: '.wxss'
-        })
-      )
-      .pipe(dest(file => file.base))
-  )
+  return src('miniprogram/app.wxss')
+    .pipe(debug())
+    .pipe(
+      rename({
+        extname: '.css'
+      })
+    )
+    .pipe(csscomb())
+    .pipe(
+      rename({
+        extname: '.wxss'
+      })
+    )
+    .pipe(dest(file => file.base))
 }
 
 // csscomb 插件
@@ -109,12 +108,10 @@ const csscombTask = cb => {
 
     // allowEmpty 选项是为了避免在没有找到匹配的文件时抛出错误
     // Error: File not found with singular glob: xxx (if this was purposeful, use `allowEmpty` option)
-    return (
-      src(newPaths, { allowEmpty: true })
-        .pipe(debug())
-        .pipe(csscombPlugin())
-        .pipe(dest(file => file.base))
-    )
+    return src(newPaths, { allowEmpty: true })
+      .pipe(debug())
+      .pipe(csscombPlugin())
+      .pipe(dest(file => file.base))
   } catch (e) {
     console.warn(e)
   }

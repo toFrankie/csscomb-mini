@@ -1,10 +1,8 @@
 .container {
   display: flex;
-
   box-sizing: border-box;
   padding: 200rpx 0;
   height: 100%;
-
   color: #aaa;
 
   align-items: center;
@@ -17,7 +15,6 @@
 }
 .test {
   font-size: 34rpx;
-
   color: #1a1a1a;
   background: red;
 }
