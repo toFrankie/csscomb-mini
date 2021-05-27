@@ -1,8 +1,7 @@
 .log-list {
   display: flex;
-  padding: 40rpx;
-
   flex-direction: column;
+  padding: 40rpx;
 }
 .log-item {
   margin: 10rpx;

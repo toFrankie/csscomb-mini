@@ -1,13 +1,12 @@
 .container {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   box-sizing: border-box;
   padding: 200rpx 0;
   height: 100%;
   color: #aaa;
-
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
 }
 .a {
   color: #eee;
