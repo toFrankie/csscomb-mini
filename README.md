@@ -22,13 +22,13 @@ $ git clone git@github.com:toFrankie/csscomb-mini.git
 2. 安装依赖
 
 ```shell
-$ yarn install
+$ yarn
 ```
 
 3. 格式化操作
 
 ```shell
-$ yarn run csscomb:mini
+$ yarn csscomb:mini
 ```
 
 ### 自实现的 CSScomb 插件
