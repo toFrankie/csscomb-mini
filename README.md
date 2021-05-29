@@ -28,7 +28,7 @@ $ yarn
 3. 格式化操作
 
 ```shell
-$ yarn csscomb:mini
+$ yarn format:fix
 ```
 
 ### 自实现的 CSScomb 插件
