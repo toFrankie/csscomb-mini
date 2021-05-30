@@ -65,6 +65,7 @@ module.exports = {
   // limit subject length
   subjectLimit: 90,
   breaklineChar: '|', // It is supported for fields body and footer.
+  breakingPrefix: 'BREAKING CHANGE:',
   footerPrefix: 'Closes:'
   // askForBreakingChangeFirst: true, // default is false
 }
