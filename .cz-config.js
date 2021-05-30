@@ -24,7 +24,7 @@ module.exports = {
       value: 'chore',
       name: '🐳 chore:    改变构建流程、或者增加依赖库、工具等'
     },
-    { value: 'revert', name: '↩ revert:    回滚到上一个版本' }
+    { value: 'revert', name: '↩  revert:   回滚到上一个版本' }
   ],
 
   // scopes: [{ name: 'accounts' }, { name: 'admin' }, { name: 'exampleScope' }, { name: 'changeMe' }],
@@ -47,13 +47,13 @@ module.exports = {
   */
   // override the messages, defaults are as follows
   messages: {
-    type: "<Type> 选择提交类型(必选)：",
-    scope: '<Scope> 1填写修改范围，如本次修改包含哪些模块(可选，回车可跳过)：',
-    customScope: '<Scope> 修改范围，如本次修改包含哪些模块(可选，回车可跳过)：', // used if allowCustomScopes is true
-    subject: '<Subject> 概述(必填，不超过90字)：\n',
-    body: '<Body> 详情(可选，换行请用 | 连接，回车跳过)：\n',
-    breaking: '<Break> 破坏性变更(可选，请列出本次修改的所有破坏性变更，回车可跳过)：\n',
-    footer: '<Footer> 备注(可选，通常是修复 bug 的链接，例如: #31, #34。换行请用 | 连接，回车可跳过)：\n',
+    type: "<Type>      选择提交类型(必选)：\n",
+    scope: '<Scope>     填写修改范围，如本次修改包含哪些模块(可选，回车可跳过)：\n',
+    customScope: '<Scope>     修改范围，如本次修改包含哪些模块(可选，回车可跳过)：\n', // used if allowCustomScopes is true
+    subject: '<Subject>   概述(必填，不超过90字)：\n',
+    body: '<Body>      详情(可选，换行请用 | 连接，回车跳过)：\n',
+    breaking: '<Break>     破坏性变更(可选，请列出本次修改的所有破坏性变更，回车可跳过)：\n',
+    footer: '<Footer>    备注(可选，通常是close issues，例如: #31, #34。换行请用 | 连接，回车可跳过)：\n',
     confirmCommit: '您确定要继续上面的提交吗？'
   },
 
@@ -65,6 +65,6 @@ module.exports = {
   // limit subject length
   subjectLimit: 90,
   breaklineChar: '|', // It is supported for fields body and footer.
-  // footerPrefix : 'ISSUES CLOSED:'
-  // askForBreakingChangeFirst : true, // default is false
+  footerPrefix: 'Closes:'
+  // askForBreakingChangeFirst: true, // default is false
 }
