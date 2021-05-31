@@ -15,7 +15,8 @@
     "csscomb:mini": "gulp csscombMini --path 'miniprogram/**/*.wxss'",
     "eslint:fix": "eslint --fix . --ext .js",
     "prettier:fix": "prettier --write './**/*.{json,js,wxml.axml,swan,css,wxss,acss}'",
-    "format:fix": "run-s prettier:fix eslint:fix csscomb:mini"
+    "format:fix": "run-s prettier:fix eslint:fix csscomb:mini",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "husky": {
     "hooks": {
@@ -33,6 +34,7 @@
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "commitizen": "^4.2.4",
+    "conventional-changelog-cli": "^2.1.1",
     "csscomb": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.3.0",
