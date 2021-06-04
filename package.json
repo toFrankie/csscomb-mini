@@ -9,6 +9,16 @@
     "type": "git",
     "url": "https://github.com/toFrankie/csscomb-mini.git"
   },
+  "keywords": [
+    "lint",
+    "eslint",
+    "prettier",
+    "csscomb",
+    "gulp-csscomb",
+    "wechat",
+    "weixin",
+    "miniprogram"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "csscomb": "gulp wxssTask",
