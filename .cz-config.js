@@ -47,7 +47,7 @@ module.exports = {
   */
   // override the messages, defaults are as follows
   messages: {
-    type: "<Type>      选择提交类型(必选)：\n",
+    type: '<Type>      选择提交类型(必选)：\n',
     scope: '<Scope>     填写修改范围，如本次修改包含哪些模块(可选，回车可跳过)：\n',
     customScope: '<Scope>     修改范围，如本次修改包含哪些模块(可选，回车可跳过)：\n', // used if allowCustomScopes is true
     subject: '<Subject>   概述(必填，不超过90字)：\n',
