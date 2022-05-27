@@ -53,7 +53,8 @@ module.exports = {
     subject: '<Subject>   概述(必填，不超过90字)：\n',
     body: '<Body>      详情(可选，换行请用 | 连接，回车跳过)：\n',
     breaking: '<Break>     破坏性变更(可选，请列出本次修改的所有破坏性变更，回车可跳过)：\n',
-    footer: '<Footer>    备注(可选，通常是close issues，例如: #31, #34。换行请用 | 连接，回车可跳过)：\n',
+    footer:
+      '<Footer>    备注(可选，通常是close issues，例如: #31, #34。换行请用 | 连接，回车可跳过)：\n',
     confirmCommit: '您确定要继续上面的提交吗？'
   },
 

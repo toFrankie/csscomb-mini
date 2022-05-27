@@ -55,7 +55,10 @@ const csscombPlugin = () => {
       }
 
       if (combConfigPath && !fs.existsSync(combConfigPath)) {
-        this.emit('error', new PluginError('csscombPlugin', 'Configuration file not found: ' + combConfigPath))
+        this.emit(
+          'error',
+          new PluginError('csscombPlugin', 'Configuration file not found: ' + combConfigPath)
+        )
         return cb()
       }
 
@@ -96,7 +99,9 @@ const csscombMini = cb => {
     const paths = options.path.split(',').filter(item => {
       const re1 = /^\//
       const re2 = /^\.\.\//
-      return item && !re2.test(item) && (!re1.test(item) || (re1.test(item) && item.includes(__dirname)))
+      return (
+        item && !re2.test(item) && (!re1.test(item) || (re1.test(item) && item.includes(__dirname)))
+      )
     })
 
     // 去重
