@@ -13,5 +13,6 @@ quickapp.config.json
 .tea
 .kaitian
 .quickapp
+.eslintcache
 
 *.min.js
