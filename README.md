@@ -13,22 +13,15 @@
 
 ### Usage
 
-1. 克隆
-
 ```shell
+# clone project
 $ git clone git@github.com:toFrankie/csscomb-mini.git
-```
 
-2. 安装依赖
-
-```shell
+# install dependencies
 $ yarn
-```
 
-3. 格式化操作
-
-```shell
-$ yarn format:fix
+# format
+$ yarn lint
 ```
 
 ### 自实现的 CSScomb 插件
