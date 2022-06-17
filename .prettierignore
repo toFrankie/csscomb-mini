@@ -7,6 +7,7 @@ package-lock.json
 yarn.lock
 
 project.config.json
+project.private.config.json
 project.swan.json
 mini.project.json
 quickapp.config.json

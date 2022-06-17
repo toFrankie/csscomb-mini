@@ -6,7 +6,7 @@ module.exports = {
   singleQuote: true,
   quoteProps: 'as-needed',
   jsxSingleQuote: false,
-  trailingComma: 'none',
+  trailingComma: 'es5',
   bracketSpacing: true,
   bracketSameLine: false,
   arrowParens: 'avoid',
@@ -21,14 +21,14 @@ module.exports = {
     {
       files: ['*.wxss', '*.acss'],
       options: {
-        parser: 'css'
-      }
+        parser: 'css',
+      },
     },
     {
       files: ['*.wxml', '*.axml', '*.swan'],
       options: {
-        parser: 'html'
-      }
-    }
-  ]
+        parser: 'html',
+      },
+    },
+  ],
 }
