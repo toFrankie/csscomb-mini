@@ -15,13 +15,13 @@ const wxssTask = cb => {
     .pipe(debug())
     .pipe(
       rename({
-        extname: '.css'
+        extname: '.css',
       })
     )
     .pipe(csscomb())
     .pipe(
       rename({
-        extname: '.wxss'
+        extname: '.wxss',
       })
     )
     .pipe(dest(file => file.base))
@@ -66,7 +66,7 @@ const csscombPlugin = () => {
         const comb = new Comb(combConfig)
         const output = await comb.processString(file.contents.toString('utf8'), {
           syntax,
-          filename: filePath
+          filename: filePath,
         })
         file.contents = Buffer.from(output, 'utf-8')
         this.push(file)
@@ -124,5 +124,5 @@ const csscombMini = cb => {
 
 module.exports = {
   wxssTask,
-  csscombMini
+  csscombMini,
 }

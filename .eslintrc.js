@@ -4,7 +4,7 @@ module.exports = {
   extends: ['eslint-config-alloy'],
   parserOptions: {
     ecmaVersion: 2020,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   env: {
     browser: true,
@@ -13,7 +13,7 @@ module.exports = {
     commonjs: true,
     mocha: true,
     jest: true,
-    jasmine: true
+    jasmine: true,
   },
   globals: {
     __DEV__: true,
@@ -27,7 +27,7 @@ module.exports = {
     getCurrentPages: true,
     wx: true,
     my: true,
-    swan: true
+    swan: true,
   },
-  rules: {}
+  rules: {},
 }
